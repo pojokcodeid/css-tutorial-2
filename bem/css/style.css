@@ -1,0 +1,71 @@
+/*
+ * author @pojok code
+ * 2022-12-12
+ *
+ */
+
+/* default style */
+
+.user {
+  background-color: #efefef;
+  border: 1px solid #dddddd;
+  box-sizing: border-box;
+  float: left;
+  margin-right: 10px;
+  padding: 15px;
+  width: 135px;
+}
+
+.user__foto {
+  border-radius: 50%;
+  box-shadow: inset 0 2px rgba(0, 0, 0, 0.4);
+  display: block;
+  width: 100%;
+}
+.user__name {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.button {
+  background-color: #cccccc;
+  border-radius: 2px;
+  border: none;
+  color: #333333;
+  cursor: pointer;
+  outline: none;
+  padding: 5px;
+  width: 100%;
+}
+
+.button:active {
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.4);
+}
+
+/* modif style */
+
+.button--primary {
+  background-color: #277bc0;
+  color: #ffffff;
+}
+
+.button--warning {
+  margin-top: 2px;
+  background-color: #ea7070;
+  color: #ffffff;
+}
+
+.user--dark {
+  background-color: #404258;
+}
+
+.user--dark .user__foto {
+  box-shadow: inset 2px 2px rgba(255, 255, 255, 0.3);
+  background-color: #50577a;
+}
+
+.user--dark .user__name {
+  color: #cff5f5;
+}

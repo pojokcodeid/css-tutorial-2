@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Box Model</title>
+   <style>
+      body {
+         background-color: lightgreen;
+      }
+
+      .pertama {
+         background-color: lightgray;
+         width: 300px;
+         border: 15px solid green;
+         padding: 50px;
+         margin: 20px;
+      }
+
+      .div1 {
+         width: 300px;
+         height: 100px;
+         padding: 26px;
+         border: 26px solid blue;
+         /* 300+26+26 */
+         box-sizing: border-box;
+      }
+
+      .div2 {
+         width: 300px;
+         height: 100px;
+         padding: 50px;
+         border: 2px solid red;
+         /* 300 + 2 + 50 */
+         box-sizing: border-box;
+      }
+
+      .box {
+         border: 1px solid black;
+      }
+
+      .div3 {
+         height: 100px;
+         width: 400px;
+         border: 1px solid green;
+         /* margin: 2rem; */
+         /* margin-top: 1rem;
+         margin-right: 2rem;
+         margin-bottom: 3rem;
+         margin-left: 4rem; */
+         margin: 1rem 2rem 3rem 4rem;
+         padding: 1rem 2rem 3rem 4rem;
+         outline: 5px solid purple;
+         outline-offset: -10px;
+      }
+
+      .bulat {
+         background-color: green;
+         width: 100px;
+         height: 100px;
+         border: 2px solid black;
+         outline: 2px solid red;
+         outline-offset: 0.25rem;
+         margin: 3rem auto;
+         border-radius: 50px;
+      }
+   </style>
+</head>
+
+<body>
+   <h1>Demo Box Model</h1>
+   <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio autem doloribus sint voluptatum sequi atque,
+      aperiam molestias, sapiente quisquam, voluptatibus fugiat asperiores magnam cum mollitia quo alias? Dignissimos,
+      culpa!
+   </p>
+   <div class="pertama">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ab saepe sit explicabo nam aut, at reprehenderit
+      sapiente recusandae culpa necessitatibus fugiat alias voluptatibus, ipsa perspiciatis aspernatur ullam magnam!
+      Debitis.
+   </div>
+   <div class="div1">
+      lebar 300 tinggi 100<br>
+      width + padding + border = lebar sebenarnya
+   </div>
+   <div class="div2">
+      lebar 300 tinggi 100
+   </div>
+   <div class="box">
+      <div class="div3">
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta necessitatibus doloremque asperiores, quisquam
+         maxime amet blanditiis suscipit labore dolor nostrum repellendus? Autem molestias voluptatum cum perspiciatis
+         non nobis, aut id.
+      </div>
+   </div>
+   <div class="bulat">
+
+   </div>
+</body>
+
+</html>

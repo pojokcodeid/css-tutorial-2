@@ -1,0 +1,47 @@
+p::first-line{
+  color: #ff0000;
+  font-variant: small-caps;
+}
+
+p::first-letter{
+  color: #0000ff;
+}
+
+h1::before{
+  content: url(../img/happy.png);
+}
+
+h1::after{
+  content: url(../img/happy.png);
+}
+
+::marker{
+  color: red;
+  font-size: 25px;
+}
+
+p::selection{
+  color: red;
+  background: yellow;
+}
+
+.gradient-button{
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+  padding: 30px 50px;
+}
+
+button::before{
+  content: "";
+  background: linear-gradient(to right, #ff7777, #d98eff, #77deff);
+  position: absolute;
+  inset: 0;
+  width: 200%;
+  z-index: -1;
+  transition: left 500ms;
+}
+
+button:hover::before{
+  left: -100%;
+}

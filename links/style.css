@@ -1,0 +1,25 @@
+@import url('https://fonts.google.com/share?selection.family=Roboto:wght@300');
+
+body{
+   padding: 10px;
+   font-size: 2rem;
+   font-family: 'Roboto', sans-serif;
+}
+
+a{
+   text-decoration: none;
+   cursor: pointer;
+   color: hsl(240, 69%, 61%);
+}
+
+a:visited{
+   color: purple;
+}
+
+a:hover, a:focus{
+   color: hsl(240, 69%, 61%,0.7);
+}
+
+a:active{
+   color: red;
+}

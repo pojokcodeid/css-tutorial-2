@@ -1,0 +1,42 @@
+:root{
+  --blue:#1e90ff;
+  --white:#ffffff;
+  --ff:Arial, Helvetica, sans-serif;
+  --fs:1.5rem;
+  --fs-xl:3rem;
+}
+
+@media (prefers-color-scheme:dark){
+  :root{
+    --blue:#3a3b3c;
+    --white:#b0b3b8
+  }
+}
+
+body{
+  background-color: var(--blue);
+}
+
+h2{
+  border-bottom: 2px solid var(--blue);
+  font-family: var(--ff);
+}
+
+.container{
+  color: var(--blue);
+  background-color: var(--white);
+  padding: 5px;
+}
+
+.diff{
+  --white:#203354;
+}
+
+button{
+  --blue2:blue;
+  --white2:whitesmoke;
+  background-color: var(--white);
+  color: var(--blue2);
+  border: 1px solid var(--blue2);
+  padding: var(--fs) var(--fs-xl);
+}

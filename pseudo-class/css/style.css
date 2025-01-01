@@ -1,0 +1,39 @@
+a:link{
+  color: red;
+}
+
+a:visited{
+  color: green;
+}
+
+a:hover{
+  color: purple;
+}
+
+a:active{
+  color: blue;
+}
+
+a.heiglight:hover{
+  color: #ff0000;
+  font-size: 22px;
+}
+
+p.bagian1{
+  display: none;
+  background-color: yellow;
+  font-size: 20px;
+}
+
+div:hover p.bagian1{
+  display: block;
+}
+
+p.anak:first-child{
+  color: blue;
+}
+
+q:lang(no){
+  quotes: "~" "~";
+  font-size: 22px;
+}
